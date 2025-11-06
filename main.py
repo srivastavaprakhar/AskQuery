@@ -6,7 +6,7 @@ import requests
 from llama_index.core.settings import Settings
 from config import MODEL_PATH, DB_PATH, INDEX_PATH
 from auth.user_auth import init_user_table, signup, login
-from models.Mistral.mistral_engine import MistralEngine
+from models.Shivaay.shivaay_engine import ShivaayEngine
 from embed_and_index import build_index
 
 # ========== Logging Setup ==========
@@ -53,7 +53,7 @@ def notify_api(endpoint: str, data: dict):
 # ========== Core Logic ==========
 def answer_question(index, question: str, model) -> str:
     with suppress_output():
-        query_engine = index.as_query_engine(similarity_top_k=4, similarity_cutoff=0.6)
+        query_engine = index.as_query_engine(similarity_top_k=20, similarity_cutoff=0.3)
         response_obj = query_engine.query(question)
 
     with open("logs/retrieval_debug.log", "a", encoding="utf-8") as f:
@@ -86,12 +86,17 @@ def answer_question(index, question: str, model) -> str:
 
     context = "\n\n".join(node.node.text for node in filtered_nodes).strip()
 
-    prompt = f"""You are a smart and concise assistant helping students at Manipal University.
+    prompt = f"""You are an intelligent university assistant that answers factual questions using only the data provided below.
 
-Using only the factual context provided below, answer the student's question clearly in natural language.  
-Do not generate code or SQL. Respond in plain English.
-
-If the context includes event information (like title, date, location, description), summarize it naturally.
+### Rules for Your Response
+- Respond in **plain, natural English**, never in SQL, JSON, or code.
+- If the question asks to *list* faculty members (e.g., "list all assistant professors"):
+  - Extract all names from the context that match the requested designation.
+  - Present them as a clean, human-readable bullet list.
+  - Each bullet should include the person's full name and designation.
+  - If they belong to multiple departments, mention the department name too.
+- If no matching faculty are found, say "No matching records found."
+- Avoid words like SELECT, FROM, or WHERE.
 
 ### Student's Question:
 {question}
@@ -122,8 +127,8 @@ If the context includes event information (like title, date, location, descripti
 
 def safe_llm_init():
     with suppress_output():
-        model = MistralEngine(model_path=MODEL_PATH)
-    logger.info("MistralEngine initialized.")
+        model = ShivaayEngine()
+    logger.info("ShivaayEngine initialized.")
     return model
 
 # ========== Main CLI ==========

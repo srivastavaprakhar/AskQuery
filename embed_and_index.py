@@ -53,7 +53,7 @@ def build_index(db_path=DB_PATH, persist_path=INDEX_PATH):
     documents = get_sqlite_db(db_path)
 
     # Tune for fewer chunks = faster retrieval
-    splitter = SentenceSplitter(chunk_size=512, chunk_overlap=50)
+    splitter = SentenceSplitter(chunk_size=1024, chunk_overlap=100)
     nodes = splitter.get_nodes_from_documents(documents)
 
     embed_model = E5SmallV2Embedding()
