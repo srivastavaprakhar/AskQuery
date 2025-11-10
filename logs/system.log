@@ -193,3 +193,69 @@ TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
 2025-11-06 21:30:42,207 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-06 21:30:42,209 - INFO - Bot response: Sorry, I only return plain English answers.
 2025-11-06 21:30:44,230 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BC213A8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 23:34:45,126 - INFO - LLM is explicitly disabled.
+2025-11-10 23:35:48,593 - WARNING - Signup failed: username 'trial1' exists.
+2025-11-10 23:35:58,062 - INFO - LLM is explicitly disabled.
+2025-11-10 23:36:03,645 - INFO - User 'trial1' logged in.
+2025-11-10 23:36:05,678 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000245199EB8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 23:36:06,157 - INFO - ShivaayEngine initialized.
+2025-11-10 23:36:06,157 - INFO - Building RAG index...
+2025-11-10 23:36:48,902 - INFO - User query: who is the hod of cse
+2025-11-10 23:36:49,014 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-10 23:36:51,235 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-10 23:36:51,252 - INFO - Bot response: Dr. Neha Chaudhary is the Head of Department (HoD) of the Department of Computer Science & Engineering.
+2025-11-10 23:36:53,279 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002451FE3DD10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-11 00:37:34,301 - INFO - LLM is explicitly disabled.
+2025-11-11 00:37:35,872 - INFO - ShivaayEngine initialized.
+2025-11-11 00:38:18,533 - INFO - ShivaayEngine initialized.
+2025-11-11 00:39:00,139 - INFO - User 'trial1' logged in via API
+2025-11-11 00:39:17,505 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:39:21,145 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:39:21,174 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
+2025-11-11 00:39:37,931 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:39:38,951 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:39:38,954 - INFO - Question: who is sakshi shringi? \u2192 Answer: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering.
+2025-11-11 00:39:57,749 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:40:01,174 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:40:01,176 - INFO - Question: list down all assistant professor of cse department \u2192 Answer: Sorry, I only return plain English answers.
+2025-11-11 00:40:19,359 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:40:20,382 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:40:20,385 - INFO - Question: who is hod of department of economics? \u2192 Answer: The Head of the Department of Economics is Dr. Sunny Dawar, who holds the designation of Associate Professor & HoD (I/C).
+2025-11-11 00:40:39,881 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:40:40,927 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:40:40,930 - INFO - Question: list all departments \u2192 Answer: - Department of Economics  
+- Department of Computer Science & Engineering  
+- Department of Arts  
+- Department of Languages, Literatures and Cultural Studies  
+- Department of Journalism and Mass Communication
+2025-11-11 00:40:54,362 - INFO - [\U0001f50d] Most relevant table inferred: playlists
+2025-11-11 00:40:55,239 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:40:55,241 - INFO - Question: list down all events \u2192 Answer: No matching records found.
+2025-11-11 00:42:47,358 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:42:49,111 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:42:49,113 - INFO - Question: who is the department of arts? \u2192 Answer: The Department of Arts is a department at the university, and it includes the following faculty members:
+
+- Dr. Richa Arora, Professor & HoD
+- Dr. Trishna Chaudhuri, Assistant Professor
+- Dr. Anjalee Narayan, Assistant Professor
+- Dr. Mansi Vani, Assistant Professor
+- Dr. Anthony Savori Raj, Assistant Professor
+- Dr. Nagaraj Naragunda, Assistant Professor
+- Dr. Radhika Mohan Gupta, Assistant Professor
+- Dr. Atuli Priya, Assistant Professor (Senior Scale)
+2025-11-11 00:43:10,747 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:43:13,691 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:43:13,693 - INFO - Question: list down assistant professor of cse department? \u2192 Answer: Sorry, I only return plain English answers.
+2025-11-11 00:43:24,620 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:43:25,667 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:43:25,670 - INFO - Question: who is neha chaudhry? \u2192 Answer: Dr. Neha Chaudhary is a Professor and Head of the Department in the Department of Computer Science & Engineering.
+2025-11-11 00:46:07,263 - INFO - User 'trial1' logged in via API
+2025-11-11 00:46:20,661 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:46:21,889 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:46:21,892 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
+2025-11-11 00:46:42,213 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:46:43,189 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:46:43,196 - INFO - Question: who is aditya sinha? \u2192 Answer: Dr. Aditya Sinha is an Assistant Professor in the Department of Computer Science & Engineering.
+2025-11-11 00:51:36,901 - INFO - [\U0001f50d] Most relevant table inferred: faculty
+2025-11-11 00:51:38,296 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 00:51:38,299 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.

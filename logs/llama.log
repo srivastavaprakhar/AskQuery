@@ -35,3 +35,15 @@ LLM is explicitly disabled. Using MockLLM.
 Building index from SQLite database...
 Loading embedding model: intfloat/e5-small-v2 on CPU
 Index saved to faiss_index
+LLM is explicitly disabled. Using MockLLM.
+LLM is explicitly disabled. Using MockLLM.
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Index saved to faiss_index
+LLM is explicitly disabled. Using MockLLM.
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Index saved to faiss_index
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Index saved to faiss_index
