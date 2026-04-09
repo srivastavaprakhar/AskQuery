@@ -3,8 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_PATH = "C:/Users/Prakhar Srivastava/Desktop/PROJECTS/AskQuery/models/Mistral/mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+# Optional local model path (not required for Gemini cloud API)
+MODEL_PATH = os.getenv("MODEL_PATH", "")
 DB_PATH = "database/trial1.db"
 INDEX_PATH = "faiss_index"
 
-SHIVAAY_API_KEY = os.getenv("SHIVAAY_API_KEY")
+# Use GEMINI_API_KEY for Google Gemini access
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")

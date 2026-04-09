@@ -6,8 +6,10 @@ import requests
 from llama_index.core.settings import Settings
 from config import MODEL_PATH, DB_PATH, INDEX_PATH
 from auth.user_auth import init_user_table, signup, login
-from models.Shivaay.shivaay_engine import ShivaayEngine
+from gemini_engine import GeminiEngine
 from embed_and_index import build_index
+from dotenv import load_dotenv
+load_dotenv()
 
 # ========== Logging Setup ==========
 os.makedirs("logs", exist_ok=True)
@@ -53,7 +55,7 @@ def notify_api(endpoint: str, data: dict):
 # ========== Core Logic ==========
 def answer_question(index, question: str, model) -> str:
     with suppress_output():
-        query_engine = index.as_query_engine(similarity_top_k=20, similarity_cutoff=0.3)
+        query_engine = index.as_query_engine(similarity_top_k=5, similarity_cutoff=0.3)
         response_obj = query_engine.query(question)
 
     with open("logs/retrieval_debug.log", "a", encoding="utf-8") as f:
@@ -119,16 +121,12 @@ def answer_question(index, question: str, model) -> str:
     if "sorry" in response.lower() and "don't have that" in response.lower():
         return "Sorry, I don't have that information."
     
-    # Optional post-filter for SQL-like output
-    if "select" in response.lower() or "from" in response.lower():
-        return "Sorry, I only return plain English answers."
-
     return response
 
 def safe_llm_init():
     with suppress_output():
-        model = ShivaayEngine()
-    logger.info("ShivaayEngine initialized.")
+        model = GeminiEngine()
+    logger.info("GeminiEngine initialized.")
     return model
 
 # ========== Main CLI ==========
@@ -168,15 +166,9 @@ def main():
             logger.warning(f"Signup failed: username '{username}' exists.")
             return
 
-    # Proceed with chat
-    if not os.path.exists(MODEL_PATH):
-        print("❌ Model file missing.")
-        logger.error(f"Model not found at: {MODEL_PATH}")
-        return
-
     print("⏳ Loading model...")
-    model = safe_llm_init()
-
+    model = GeminiEngine()
+    
     logger.info("Building RAG index...")
     with suppress_output():
         index = build_index(db_path=DB_PATH, persist_path=INDEX_PATH)

@@ -8,7 +8,7 @@ A lightweight RAG-based assistant that helps students query university databases
 - **RAG Architecture**: Combines Retrieval Augmented Generation for relevant, concise responses.
 - **Storage**: Uses SQLite (relational) and FAISS (vector) databases for efficient data management and search.
 - **Embeddings**: Employs MiniLM/E5 for fast, high-quality retrieval.
-- **CPU-Friendly LLM**: Mistral 7B (GGUF format) for concise answers, optimized for local, low-resource hardware.
+- **LLM**: Google Gemini (cloud) for high-quality generation via `GEMINI_API_KEY`.
 - **Low Resource Optimizations**: Designed for laptops and devices without GPUs.
 - **Simple Web UI**: Interact via a clean browser interface.
 
@@ -17,7 +17,7 @@ A lightweight RAG-based assistant that helps students query university databases
 - **Backend**: Python (FastAPI) with RAG pipeline
 - **Frontend**: Next.js (React) with TypeScript
 - **Database**: SQLite (relational) and FAISS (vector)
-- **LLM**: Mistral 7B (GGUF format) via Shivaay Engine
+- **LLM**: Google Gemini via `GeminiEngine` (set `GEMINI_API_KEY` in your `.env`)
 - **Embeddings**: MiniLM/E5 for fast retrieval
 
 ## Getting Started
@@ -41,13 +41,12 @@ A lightweight RAG-based assistant that helps students query university databases
    pip install -r requirements.txt
    ```
 
-3. **Configure the model path** (if needed)
-   - Update `MODEL_PATH` in `config.py` to point to your Mistral model file
-   - Ensure the model file exists at the specified path
+3. **Configure model / credentials**
+   - If you use a local model, set `MODEL_PATH` in `config.py` or the `MODEL_PATH` env var
+   - For Google Gemini, add `GEMINI_API_KEY=your_api_key` to your `.env`
 
-4. **Setup environment variables** (optional)
-   - Create a `.env` file if using Shivaay API
-   - Add `SHIVAAY_API_KEY=your_api_key` if needed
+4. **Setup environment variables**
+   - Create a `.env` file and add `GEMINI_API_KEY=your_api_key`
 
 5. **Run the backend server**
    ```bash
@@ -144,9 +143,9 @@ If you see this error in the frontend:
 
 #### Backend Model Loading Issues
 
-- Ensure the model file exists at the path specified in `config.py`
-- Check that you have enough disk space and memory
-- The model file can be large (several GB), so initial load may take time
+- If using a local GGUF model: ensure the model file exists at the path specified in `config.py` or the `MODEL_PATH` env var.
+- If using Google Gemini (cloud): ensure `GEMINI_API_KEY` is set and your network allows outbound API calls.
+- For local models, check that you have enough disk space and memory — model files can be several GB.
 
 ## Usage
 
@@ -158,7 +157,7 @@ If you see this error in the frontend:
 ## Model Details
 
 - **Embeddings**: [MiniLM/E5](https://huggingface.co/MiniLM)
-- **LLM**: [Mistral 7B GGUF](https://github.com/mistralai/mistral-src)
+- **LLM**: Google Gemini (via `GeminiEngine`)
 - **Vector Store**: [FAISS](https://github.com/facebookresearch/faiss)
 - **Relational DB**: [SQLite](https://www.sqlite.org/index.html)
 
@@ -166,6 +165,6 @@ If you see this error in the frontend:
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-- [Mistral AI](https://mistral.ai/)
+- [Google Gemini Docs](https://developers.generativeai.google/)
 - [Facebook FAISS](https://github.com/facebookresearch/faiss)
 - [Hugging Face](https://huggingface.co/)

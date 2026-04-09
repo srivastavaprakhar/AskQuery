@@ -1,261 +1,119 @@
-
-2025-11-04 11:39:05,635 - INFO - User query: who is the hod of cse department
-2025-11-04 11:39:05,727 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:39:07,828 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:39:07,840 - INFO - Bot response: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
-2025-11-04 11:39:09,885 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022230512210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:39:18,023 - INFO - User query: who is sakshi shringi
-2025-11-04 11:39:18,125 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:39:19,805 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:39:19,807 - INFO - Bot response: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering at Manipal University.
-2025-11-04 11:39:21,842 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022230512850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:39:32,901 - INFO - User query: list down all the assistant professor of cse department
-2025-11-04 11:39:32,996 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:39:37,110 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:39:37,113 - INFO - Bot response: Sorry, I only return plain English answers.
-2025-11-04 11:39:39,140 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002223039A8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:42:21,620 - INFO - LLM is explicitly disabled.
-2025-11-04 11:42:28,206 - INFO - User 'trial1' logged in.
-2025-11-04 11:42:30,232 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002267BBFF8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:42:30,632 - INFO - ShivaayEngine initialized.
-2025-11-04 11:42:30,632 - INFO - Building RAG index...
-2025-11-04 11:43:16,100 - INFO - User query: list all assistant professor
-2025-11-04 11:43:16,208 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:43:20,550 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:43:20,558 - INFO - Bot response: Sorry, I only return plain English answers.
-2025-11-04 11:43:22,597 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000226021A5F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:43:29,396 - INFO - User query: who is sakshi shringi
-2025-11-04 11:43:29,494 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:43:30,689 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:43:30,692 - INFO - Bot response: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering at Manipal University.
-2025-11-04 11:43:32,736 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000226021A65D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:48:29,439 - INFO - LLM is explicitly disabled.
-2025-11-04 11:48:36,494 - INFO - User 'trial1' logged in.
-2025-11-04 11:48:38,537 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001411800F8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:48:38,958 - INFO - ShivaayEngine initialized.
-2025-11-04 11:48:38,958 - INFO - Building RAG index...
-2025-11-04 11:49:14,533 - INFO - User query: list alll assistant professor of cse department
-2025-11-04 11:49:14,632 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:49:19,053 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:49:19,065 - INFO - Bot response: Sorry, I only return plain English answers.
-2025-11-04 11:49:21,096 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001411E445F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:49:38,812 - INFO - User query: who is the deputy hod of cse department
-2025-11-04 11:49:38,922 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:49:39,944 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:49:39,945 - INFO - Bot response: Dr. Mahesh Jangid is the Deputy HoD of the Department of Computer Science & Engineering.
-2025-11-04 11:49:41,983 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001411E4465D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:49:48,505 - INFO - User query: who is the hod of department of eco
-2025-11-04 11:49:48,595 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 11:49:50,083 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:49:50,084 - INFO - Bot response: The Head of the Department of Economics is Dr. Sunny Dawar, who holds the designation of Associate Professor & HoD (I/C).
-2025-11-04 11:49:52,114 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001411E2BA3F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:50:06,597 - INFO - User query: exirt
-2025-11-04 11:50:06,689 - INFO - [\U0001f50d] Most relevant table inferred: playlists
-2025-11-04 11:50:08,461 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 11:50:08,464 - INFO - Bot response: Sorry, I only return plain English answers.
-2025-11-04 11:50:10,495 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001411E2BA8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 11:50:10,496 - INFO - User query: 
-2025-11-04 11:50:10,503 - ERROR - Error during response generation
+2026-04-01 14:09:57,332 - INFO - LLM is explicitly disabled.
+2026-04-01 14:09:57,344 - INFO - ShivaayEngine initialized.
+2026-04-01 14:09:58,103 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:09:58,236 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:09:58,683 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:09:58,815 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-01 14:09:59,283 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 14:10:00,124 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 14:10:00,577 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:10:00,723 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:10:02,314 - INFO - ShivaayEngine initialized.
+2026-04-01 14:10:02,730 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:10:02,903 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:10:03,261 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:10:03,432 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-01 14:10:03,797 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 14:10:04,159 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 14:10:04,555 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:10:04,555 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-01 14:10:04,682 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:10:38,639 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-01 14:10:39,307 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:10:39,309 - INFO - Retrying request to /chat/completions in 0.382562 seconds
+2026-04-01 14:10:39,797 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:10:39,798 - INFO - Retrying request to /chat/completions in 0.757886 seconds
+2026-04-01 14:10:40,620 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:10:40,622 - INFO - Question: who is the deputy hod of cse department ‚Üí Answer: Error from Shivaay API: Error code: 500 - {'error': 'Failed to parse response'}
+2026-04-01 14:13:14,768 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-01 14:13:14,931 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:13:14,932 - INFO - Retrying request to /chat/completions in 0.499609 seconds
+2026-04-01 14:13:15,492 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:13:15,493 - INFO - Retrying request to /chat/completions in 0.994721 seconds
+2026-04-01 14:13:16,606 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:13:16,608 - INFO - Question: who is the hof cse dept? ‚Üí Answer: Error from Shivaay API: Error code: 500 - {'error': 'Failed to parse response'}
+2026-04-01 14:13:43,607 - INFO - LLM is explicitly disabled.
+2026-04-01 14:13:43,614 - INFO - ShivaayEngine initialized.
+2026-04-01 14:13:44,085 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:44,085 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-01 14:13:44,119 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:13:44,389 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:44,423 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-01 14:13:44,707 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 14:13:44,972 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 14:13:45,312 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:45,351 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:13:46,931 - INFO - ShivaayEngine initialized.
+2026-04-01 14:13:47,204 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:47,244 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:13:47,517 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:47,554 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-01 14:13:47,828 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-01 14:13:48,124 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-01 14:13:48,438 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-01 14:13:48,477 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-01 14:14:03,544 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-01 14:14:03,821 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:14:03,822 - INFO - Retrying request to /chat/completions in 0.444051 seconds
+2026-04-01 14:14:04,323 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:14:04,324 - INFO - Retrying request to /chat/completions in 0.987797 seconds
+2026-04-01 14:14:05,373 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-04-01 14:14:05,375 - ERROR - Shivaay API error (status=500): Error code: 500 - {'error': 'Failed to parse response'} | body=<Response [500 Internal Server Error]>
 Traceback (most recent call last):
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\main.py", line 196, in main
-    response = answer_question(index, user_query, model)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\main.py", line 57, in answer_question
-    response_obj = query_engine.query(question)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
-    result = func(*args, **kwargs)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\base\base_query_engine.py", line 44, in query
-    query_result = self._query(str_or_query_bundle)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
-    result = func(*args, **kwargs)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\query_engine\retriever_query_engine.py", line 196, in _query
-    nodes = self.retrieve(query_bundle)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\query_engine\retriever_query_engine.py", line 149, in retrieve
-    nodes = self._retriever.retrieve(query_bundle)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
-    result = func(*args, **kwargs)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\base\base_retriever.py", line 210, in retrieve
-    nodes = self._retrieve(query_bundle)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
-    result = func(*args, **kwargs)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\indices\vector_store\retrievers\retriever.py", line 104, in _retrieve
-    return self._get_nodes_with_embeddings(query_bundle)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\indices\vector_store\retrievers\retriever.py", line 220, in _get_nodes_with_embeddings
-    query_result = self._vector_store.query(query, **self._kwargs)
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\vector_stores\simple.py", line 303, in query
-    top_similarities, top_ids = get_top_k_embeddings(
-                                ~~~~~~~~~~~~~~~~~~~~^
-        query_embedding,
-        ^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        embedding_ids=node_ids,
-        ^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\indices\query\embedding_utils.py", line 31, in get_top_k_embeddings
-    similarity = similarity_fn(query_embedding_np, emb)  # type: ignore[arg-type]
-  File "C:\Users\Prakhar Srivastava\Desktop\PROJECTS\AskQuery\.venv\Lib\site-packages\llama_index\core\base\embeddings\base.py", line 64, in similarity
-    product = np.dot(embedding1, embedding2)
-TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
-2025-11-04 14:46:39,521 - INFO - LLM is explicitly disabled.
-2025-11-04 14:46:44,025 - INFO - User 'trial1' logged in.
-2025-11-04 14:46:46,066 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026DC61AF8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 14:46:46,499 - INFO - ShivaayEngine initialized.
-2025-11-04 14:46:46,500 - INFO - Building RAG index...
-2025-11-04 14:47:32,339 - INFO - User query: who is the hod of cse department
-2025-11-04 14:47:32,457 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 14:47:35,731 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 14:47:35,747 - INFO - Bot response: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
-2025-11-04 14:47:37,784 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026DCC5D5F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 14:47:46,644 - INFO - User query: who is sakshi shringi
-2025-11-04 14:47:46,755 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 14:47:47,652 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 14:47:47,655 - INFO - Bot response: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering.
-2025-11-04 14:47:49,691 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026DCC5D65D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 14:48:09,836 - INFO - User query: list all department
-2025-11-04 14:48:09,923 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 14:48:10,889 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 14:48:10,892 - INFO - Bot response: - Department of Economics  
-- Department of Arts  
-- Department of Computer Science & Engineering  
-- Department of Languages, Literatures and Cultural Studies  
-- Department of Journalism and Mass Communication
-2025-11-04 14:48:12,933 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026DCC44A520>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 14:52:47,908 - INFO - User query: who is the assosciate dean of cse department
-2025-11-04 14:52:48,016 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 14:52:49,314 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 14:52:49,316 - INFO - Bot response: The Associate Dean of the Department of Computer Science & Engineering is Dr. Chhatar Singh Lamba and Dr. Roheet Bhatnagar. Both hold the designation of Professor & Associate Dean.
-2025-11-04 14:52:51,341 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026DCC44A8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 16:43:05,610 - INFO - LLM is explicitly disabled.
-2025-11-04 16:43:11,628 - WARNING - Login failed for user 'trail1'.
-2025-11-04 16:43:35,321 - INFO - LLM is explicitly disabled.
-2025-11-04 16:43:59,421 - INFO - User 'trial1' logged in.
-2025-11-04 16:44:01,470 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002539DEBB8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 16:44:01,933 - INFO - ShivaayEngine initialized.
-2025-11-04 16:44:01,933 - INFO - Building RAG index...
-2025-11-04 16:44:41,182 - INFO - User query: who is the hod of cse department
-2025-11-04 16:44:41,295 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 16:44:45,370 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 16:44:45,379 - INFO - Bot response: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
-2025-11-04 16:44:47,414 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000253A42F5F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-04 16:45:23,428 - INFO - User query: who is sakshi shringi
-2025-11-04 16:45:23,537 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-04 16:45:26,059 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-04 16:45:26,060 - INFO - Bot response: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering.
-2025-11-04 16:45:28,088 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000253A42F65D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-06 21:26:30,830 - INFO - LLM is explicitly disabled.
-2025-11-06 21:28:03,223 - INFO - User 'trial1' logged in.
-2025-11-06 21:28:05,258 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BBBDDF8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-06 21:28:05,791 - INFO - ShivaayEngine initialized.
-2025-11-06 21:28:05,791 - INFO - Building RAG index...
-2025-11-06 21:29:37,110 - INFO - User query: list all departments
-2025-11-06 21:29:37,213 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-06 21:29:39,337 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-06 21:29:39,354 - INFO - Bot response: - Department of Economics  
-- Department of Computer Science & Engineering  
-- Department of Arts  
-- Department of Languages, Literatures and Cultural Studies  
-- Department of Journalism and Mass Communication
-2025-11-06 21:29:41,377 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BC22C1F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-06 21:29:50,828 - INFO - User query: can you list down all departments for me?
-2025-11-06 21:29:50,920 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-06 21:29:52,748 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-06 21:29:52,751 - INFO - Bot response: Here are all the departments:
-
-- Department of Economics  
-- Department of Journalism and Mass Communication  
-- Department of Arts  
-- Department of Computer Science & Engineering  
-- Department of Languages, Literatures and Cultural Studies
-2025-11-06 21:29:54,783 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BC22C25D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-06 21:30:21,724 - INFO - User query: can you list down all events of 2024
-2025-11-06 21:30:21,826 - INFO - [\U0001f50d] Most relevant table inferred: academic_calendar
-2025-11-06 21:30:25,932 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-06 21:30:25,934 - INFO - Bot response: Here are all the events of 2024:
-
-- Holi ñ March 25, 2024 (Festival of colors)  
-- Onerios (Cultural Fest) ñ February 29 to March 2, 2024 (Annual cultural festival at MUJ)  
-- Commencement of classes (Even Semester) ñ January 8, 2024 (Classes begin for all students for even semester)  
-- Start of academic registration for even semester ñ January 5, 2024 (Registration starts for the even semester)  
-- Start of MTEs (All Semesters) ñ March 4 to March 8, 2024 (Mid Term Examinations for all students)  
-- Research Paper Talk ñ June 14, 2024 (A Research Paper talk at Manipal University Jaipur)  
-- Altair Datathon ñ April 15 to April 16, 2024 (A data competition at Manipal University Jaipur)  
-- Job Junction ñ April 15 to April 16, 2024 (Job fair organized at Manipal University Jaipur)  
-- Start of ETEs (All Semesters) ñ May 3 to May 17, 2024 (End Term Exams for all students)  
-- Start of Summer Break ñ May 18, 2024 (Beginning of summer vacation for all students)  
-- Annual General Meeting ñ September 9, 2024 (The AGM at Manipal University Jaipur)  
-- Elicit'24 ñ September 27 to September 29, 2024 (A 3-day Techno-cultural event at Manipal University Jaipur)  
-- International Symposium for Data Science ñ November 7 to November 8, 2024 (The International Symposium at Manipal University Jaipur)  
-- ACM ROCS (Research Opportunities in Computer Science) ñ November 23, 2024 (The ACM ROCS event at Manipal University Jaipur)
-2025-11-06 21:30:27,970 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BC213A650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-06 21:30:39,083 - INFO - User query: i mean college events
-2025-11-06 21:30:39,181 - INFO - [\U0001f50d] Most relevant table inferred: academic_calendar
-2025-11-06 21:30:42,207 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-06 21:30:42,209 - INFO - Bot response: Sorry, I only return plain English answers.
-2025-11-06 21:30:44,230 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BC213A8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-10 23:34:45,126 - INFO - LLM is explicitly disabled.
-2025-11-10 23:35:48,593 - WARNING - Signup failed: username 'trial1' exists.
-2025-11-10 23:35:58,062 - INFO - LLM is explicitly disabled.
-2025-11-10 23:36:03,645 - INFO - User 'trial1' logged in.
-2025-11-10 23:36:05,678 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000245199EB8C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-10 23:36:06,157 - INFO - ShivaayEngine initialized.
-2025-11-10 23:36:06,157 - INFO - Building RAG index...
-2025-11-10 23:36:48,902 - INFO - User query: who is the hod of cse
-2025-11-10 23:36:49,014 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-10 23:36:51,235 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-10 23:36:51,252 - INFO - Bot response: Dr. Neha Chaudhary is the Head of Department (HoD) of the Department of Computer Science & Engineering.
-2025-11-10 23:36:53,279 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002451FE3DD10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-2025-11-11 00:37:34,301 - INFO - LLM is explicitly disabled.
-2025-11-11 00:37:35,872 - INFO - ShivaayEngine initialized.
-2025-11-11 00:38:18,533 - INFO - ShivaayEngine initialized.
-2025-11-11 00:39:00,139 - INFO - User 'trial1' logged in via API
-2025-11-11 00:39:17,505 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:39:21,145 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:39:21,174 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
-2025-11-11 00:39:37,931 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:39:38,951 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:39:38,954 - INFO - Question: who is sakshi shringi? \u2192 Answer: Dr. Sakshi Shringi is an Assistant Professor in the Department of Computer Science & Engineering.
-2025-11-11 00:39:57,749 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:40:01,174 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:40:01,176 - INFO - Question: list down all assistant professor of cse department \u2192 Answer: Sorry, I only return plain English answers.
-2025-11-11 00:40:19,359 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:40:20,382 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:40:20,385 - INFO - Question: who is hod of department of economics? \u2192 Answer: The Head of the Department of Economics is Dr. Sunny Dawar, who holds the designation of Associate Professor & HoD (I/C).
-2025-11-11 00:40:39,881 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:40:40,927 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:40:40,930 - INFO - Question: list all departments \u2192 Answer: - Department of Economics  
-- Department of Computer Science & Engineering  
-- Department of Arts  
-- Department of Languages, Literatures and Cultural Studies  
-- Department of Journalism and Mass Communication
-2025-11-11 00:40:54,362 - INFO - [\U0001f50d] Most relevant table inferred: playlists
-2025-11-11 00:40:55,239 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:40:55,241 - INFO - Question: list down all events \u2192 Answer: No matching records found.
-2025-11-11 00:42:47,358 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:42:49,111 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:42:49,113 - INFO - Question: who is the department of arts? \u2192 Answer: The Department of Arts is a department at the university, and it includes the following faculty members:
-
-- Dr. Richa Arora, Professor & HoD
-- Dr. Trishna Chaudhuri, Assistant Professor
-- Dr. Anjalee Narayan, Assistant Professor
-- Dr. Mansi Vani, Assistant Professor
-- Dr. Anthony Savori Raj, Assistant Professor
-- Dr. Nagaraj Naragunda, Assistant Professor
-- Dr. Radhika Mohan Gupta, Assistant Professor
-- Dr. Atuli Priya, Assistant Professor (Senior Scale)
-2025-11-11 00:43:10,747 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:43:13,691 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:43:13,693 - INFO - Question: list down assistant professor of cse department? \u2192 Answer: Sorry, I only return plain English answers.
-2025-11-11 00:43:24,620 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:43:25,667 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:43:25,670 - INFO - Question: who is neha chaudhry? \u2192 Answer: Dr. Neha Chaudhary is a Professor and Head of the Department in the Department of Computer Science & Engineering.
-2025-11-11 00:46:07,263 - INFO - User 'trial1' logged in via API
-2025-11-11 00:46:20,661 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:46:21,889 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:46:21,892 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
-2025-11-11 00:46:42,213 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:46:43,189 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:46:43,196 - INFO - Question: who is aditya sinha? \u2192 Answer: Dr. Aditya Sinha is an Assistant Professor in the Department of Computer Science & Engineering.
-2025-11-11 00:51:36,901 - INFO - [\U0001f50d] Most relevant table inferred: faculty
-2025-11-11 00:51:38,296 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 200 OK"
-2025-11-11 00:51:38,299 - INFO - Question: who is the hod of cse department? \u2192 Answer: The Head of the Department (HoD) of the Department of Computer Science & Engineering is Dr. Neha Chaudhary, who holds the designation of Professor & HoD.
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/models/Shivaay/shivaay_engine.py", line 22, in generate
+    completion = self.client.chat.completions.create(
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Error code: 500 - {'error': 'Failed to parse response'}
+2026-04-01 14:14:05,382 - INFO - Question: hi ‚Üí Answer: Error from Shivaay API: Error code: 500 - <Response [500 Internal Server Error]>
+2026-04-09 12:47:19,356 - INFO - LLM is explicitly disabled.
+2026-04-09 12:47:19,357 - INFO - GeminiEngine initialized.
+2026-04-09 12:47:20,180 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:20,182 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 12:47:20,220 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:47:20,585 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:20,703 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 12:47:20,976 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 12:47:21,237 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 12:47:21,615 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:21,654 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:47:23,443 - INFO - GeminiEngine initialized.
+2026-04-09 12:47:23,755 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:23,850 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:47:24,107 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:24,145 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 12:47:24,428 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 12:47:24,699 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 12:47:25,049 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:47:25,087 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:48:03,867 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-09 12:50:55,968 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-09 12:51:23,460 - INFO - Question: who is the hod of cse dept? ‚Üí Answer: Dr. Neha Chaudhary is the Head of Department (HoD) for the Department of Computer Science & Engineering. Her full designation is Professor & HoD.
+2026-04-09 12:53:22,033 - INFO - LLM is explicitly disabled.
+2026-04-09 12:53:22,034 - INFO - GeminiEngine initialized.
+2026-04-09 12:53:22,600 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:22,643 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:22,986 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:23,024 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:23,509 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 12:53:23,769 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 12:53:24,074 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:24,157 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:25,889 - INFO - GeminiEngine initialized.
+2026-04-09 12:53:26,242 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:26,329 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:26,654 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:26,655 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 12:53:26,694 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:27,178 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 12:53:27,444 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 12:53:27,739 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 12:53:27,778 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-09 12:53:31,403 - INFO - [üîç] Most relevant table inferred: faculty
+2026-04-09 12:54:17,744 - INFO - Question: who is ankur pandey sir? ‚Üí Answer: Dr. Ankur Pandey is an Assistant Professor (Selection Grade) in the Department of Computer Science & Engineering.
