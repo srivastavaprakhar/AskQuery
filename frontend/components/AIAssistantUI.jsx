@@ -223,9 +223,9 @@ export default function AIAssistantUI() {
 
     const currentConvId = convId
     try {
-      // Call the backend API
-      const response = await apiService.askQuestion(content)
-      const answer = response.answer || "Sorry, I couldn't generate a response."
+      // Call the backend API with the message content
+      const res = await apiService.askQuestion(content)
+      const answer = (res && (res.answer || res.data?.answer)) || "Sorry, I couldn't generate a response."
 
       setIsThinking(false)
       setThinkingConvId(null)
