@@ -101,5 +101,7 @@ Desktop.ini
 *.swp
 *~
 
+logs/
+
 # Sensitive config files (uncomment if needed)
 # config.py
