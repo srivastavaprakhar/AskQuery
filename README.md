@@ -16,7 +16,7 @@ AskQuery bridges the gap between unstructured student questions and structured u
 ## ✨ Features
 
 - **🗣️ Natural Language Interface**: Ask questions in plain English without knowing SQL or database structure
-- **🧠 RAG Pipeline**: Combines retrieval (FAISS vector store + Postgres) with generation (Google Gemini) for accurate, grounded responses
+- **🧠 RAG Pipeline**: Combines retrieval (PostgreSQL pgvector) with generation (Google Gemini) for accurate, grounded responses
 - **⚡ CPU-Optimized**: Uses E5-small-v2 embeddings for efficient retrieval without requiring GPUs
 - **🔒 Secure Authentication**: Integrates Supabase for user authentication and session management
 - **🎨 Modern Web UI**: Clean, responsive Next.js interface with light/dark theme support
@@ -198,8 +198,8 @@ AskQuery bridges the gap between unstructured student questions and structured u
    
    On first run:
    - Backend initializes GeminiEngine (loads Gemini API config)
-   - Builds FAISS index from Postgres data (may take 1-2 minutes)
-   - Creates pgvector embeddings for all documents
+   - Fetches data from PostgreSQL and creates E5-small-v2 embeddings
+   - Builds pgvector index (vector store) from Postgres data (may take 1-2 minutes)
    - Sets up logging to `logs/system.log` and `logs/retrieval_debug.log`
 
 ### Frontend Setup
@@ -464,11 +464,23 @@ If you see this error in the frontend:
    - Wait for the model to load before trying to connect
    - The frontend will automatically retry the connection
 
-#### Backend Model Loading Issues
+#### Backend Startup: Slow First Run
 
-- If using a local GGUF model: ensure the model file exists at the path specified in `config.py` or the `MODEL_PATH` env var.
-- If using Google Gemini (cloud): ensure `GEMINI_API_KEY` is set and your network allows outbound API calls.
-- For local models, check that you have enough disk space and memory — model files can be several GB.
+On the first run, the backend builds the pgvector index which takes time:
+- Backend loads Gemini API configuration
+- Fetches all data from PostgreSQL tables
+- Creates E5-small-v2 embeddings for each document (384 dimensions)
+- Inserts embeddings into pgvector (PostgreSQL vector extension)
+- First initialization: typically 1-3 minutes depending on data volume
+- Subsequent runs: loads from database directly (much faster)
+
+#### Unused Dependencies
+
+`faiss-cpu` is listed in `requirements.txt` but **not actively used** in the current implementation. It remains for backwards compatibility from a previous version. If you want to clean up, you can:
+1. Remove `faiss-cpu` from `requirements.txt`
+2. Keep the `faiss_index/` folder for reference (old index files)
+
+The active vector store is **PostgreSQL pgvector** via LlamaIndex.
 
 ## Usage
 
