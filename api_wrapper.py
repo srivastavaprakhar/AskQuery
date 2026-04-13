@@ -121,4 +121,12 @@ def api_ask(
 # ==============================
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("api_wrapper:app", host="127.0.0.1", port=8000, reload=False)
+    import os
+
+    port = int(os.environ.get("PORT", 8000))
+
+    uvicorn.run(
+        "api_wrapper:app",
+        host="0.0.0.0",   # 🔥 IMPORTANT
+        port=port
+    )
