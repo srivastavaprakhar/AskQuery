@@ -1,24 +1,28 @@
-import sqlite3
+import psycopg2
+from config import SUPABASE_DB_HOST, SUPABASE_DB_NAME, SUPABASE_DB_USER, SUPABASE_DB_PASSWORD, SUPABASE_DB_PORT
 
-# Connect to the database
-conn = sqlite3.connect("trial1.db")
+conn = psycopg2.connect(
+    host=SUPABASE_DB_HOST,
+    database=SUPABASE_DB_NAME,
+    user=SUPABASE_DB_USER,
+    password=SUPABASE_DB_PASSWORD,
+    port=SUPABASE_DB_PORT
+)
 cursor = conn.cursor()
 
 # Create the subjects table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS subjects (
-    subject_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    subject_id SERIAL PRIMARY KEY,
     subject_name TEXT UNIQUE NOT NULL
 )
 ''')
 
-# Create the playlists table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS playlists (
-    playlist_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    subject_id INTEGER,
-    url TEXT NOT NULL,
-    FOREIGN KEY (subject_id) REFERENCES subjects(subject_id)
+    playlist_id SERIAL PRIMARY KEY,
+    subject_id INTEGER REFERENCES subjects(subject_id) ON DELETE CASCADE,
+    url TEXT NOT NULL
 )
 ''')
 
@@ -31,14 +35,15 @@ class Subject:
         try:
             cursor.execute('''
                 INSERT INTO subjects (subject_name)
-                VALUES (?)
+                VALUES (%s)
+                ON CONFLICT (subject_name) DO NOTHING
             ''', (self.subject_name,))
-        except sqlite3.IntegrityError:
-            print(f"Subject '{self.subject_name}' already exists, skipping insert.")
+        except Exception as e:
+            print(e)
 
     def get_id(self, cursor):
         cursor.execute('''
-            SELECT subject_id FROM subjects WHERE subject_name = ?
+            SELECT subject_id FROM subjects WHERE subject_name = %s
         ''', (self.subject_name,))
         return cursor.fetchone()[0]
 
@@ -51,7 +56,7 @@ class Playlist:
     def save_to_db(self, cursor):
         cursor.execute('''
             INSERT INTO playlists (subject_id, url)
-            VALUES (?, ?)
+            VALUES (%s, %s)
         ''', (self.subject_id, self.url))
 
 # Insert subjects

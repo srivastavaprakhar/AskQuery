@@ -1,42 +1,15 @@
 
---- Query: who is ankur pandey sir? ---
-[1] Score: 0.864
+--- Query: who is the hod of cse dept? ---
+[1] Score: 0.831
 Record from faculty table:
-Faculty id: 65
-Name: Dr. Ankur Pandey
-Designation: Assistant Professor (Selection Grade)
+Faculty id: 52
+Name: Dr. Mahesh Jangid
+Designation: Associate Professor & Deputy HoD
 Department id: 5
 Department id (from departments): 5
 Department name (from departments): Department of Computer Science & Engineering
 ---
-[2] Score: 0.792
-Record from faculty table:
-Faculty id: 64
-Name: Dr. Ankit Shrivastava
-Designation: Assistant Professor (Senior Scale)
-Department id: 5
-Department id (from departments): 5
-Department name (from departments): Department of Computer Science & Engineering
----
-[3] Score: 0.788
-Record from faculty table:
-Faculty id: 37
-Name: Dr. Sneha Thakur
-Designation: Assistant Professor
-Department id: 3
-Department id (from departments): 3
-Department name (from departments): Department of Languages, Literatures and Cultural Studies
----
-[4] Score: 0.787
-Record from faculty table:
-Faculty id: 76
-Name: Dr. Divya Thakur
-Designation: Assistant Professor
-Department id: 5
-Department id (from departments): 5
-Department name (from departments): Department of Computer Science & Engineering
----
-[5] Score: 0.780
+[2] Score: 0.828
 Record from faculty table:
 Faculty id: 51
 Name: Dr. Neha Chaudhary
@@ -44,4 +17,135 @@ Designation: Professor & HoD
 Department id: 5
 Department id (from departments): 5
 Department name (from departments): Department of Computer Science & Engineering
+---
+[3] Score: 0.816
+Record from departments table:
+Department id: 5
+Department name: Department of Computer Science & Engineering
+---
+[4] Score: 0.808
+Record from faculty table:
+Faculty id: 88
+Name: Dr. Manu Shrivastava
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[5] Score: 0.807
+Record from faculty table:
+Faculty id: 59
+Name: Dr. Akshay Jadhav
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+
+--- Query: who is the hod of cse dept? ---
+
+--- Query: who is the hod of cse dept? ---
+
+--- Query: who is the hod of cse? ---
+
+--- Query: who is the hod of cse? ---
+
+--- Query: who is the hod of cse dept? ---
+
+--- Query: who is the hod of cse dept? ---
+
+--- Query: who is the hod of cse? ---
+
+--- Query: who is neha janu? ---
+[1] Score: 0.863
+Record from faculty:
+faculty_id: 93
+name: Dr. Neha Janu
+designation: Associate Professor
+department_id: 53
+---
+[2] Score: 0.803
+Record from faculty:
+faculty_id: 51
+name: Dr. Neha Chaudhary
+designation: Professor & HoD
+department_id: 53
+---
+[3] Score: 0.796
+Record from faculty:
+faculty_id: 92
+name: Ms. Neha
+designation: Assistant Professor (Adhoc)
+department_id: 53
+---
+[4] Score: 0.783
+Record from faculty:
+faculty_id: 37
+name: Dr. Sneha Thakur
+designation: Assistant Professor
+department_id: 3
+---
+[5] Score: 0.771
+Record from faculty:
+faculty_id: 123
+name: Dr. Susheela Vishnoi
+designation: Assistant Professor (Selection Grade)
+department_id: 53
+---
+
+--- Query: who is neha jaanu maam? ---
+[1] Score: 0.796
+Record from faculty table:
+Faculty id: 93
+Name: Dr. Neha Janu
+Designation: Associate Professor
+Department id: 53
+Department id (from departments): 53
+Department name (from departments): Department of Computer Science & Engineering
+Faculty id (from faculty): 93
+Name (from faculty): Dr. Neha Janu
+---
+[2] Score: 0.783
+Record from faculty table:
+Faculty id: 92
+Name: Ms. Neha
+Designation: Assistant Professor (Adhoc)
+Department id: 53
+Department id (from departments): 53
+Department name (from departments): Department of Computer Science & Engineering
+Faculty id (from faculty): 92
+Name (from faculty): Ms. Neha
+---
+[3] Score: 0.783
+Record from faculty table:
+Faculty id: 51
+Name: Dr. Neha Chaudhary
+Designation: Professor & HoD
+Department id: 53
+Department id (from departments): 53
+Department name (from departments): Department of Computer Science & Engineering
+Faculty id (from faculty): 51
+Name (from faculty): Dr. Neha Chaudhary
+---
+[4] Score: 0.763
+Record from faculty table:
+Faculty id: 11
+Name: Dr. Sushil Kumar Rai
+Designation: Professor & HoD
+Department id: 2
+Department id (from departments): 2
+Department name (from departments): Department of Journalism and Mass Communication
+Faculty id (from faculty): 11
+Name (from faculty): Dr. Sushil Kumar Rai
+---
+[5] Score: 0.763
+Record from faculty table:
+Faculty id: 37
+Name: Dr. Sneha Thakur
+Designation: Assistant Professor
+Department id: 3
+Department id (from departments): 3
+Department name (from departments): Department of Languages, Literatures and Cultural Studies
+Faculty id (from faculty): 37
+Name (from faculty): Dr. Sneha Thakur
 ---

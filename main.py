@@ -4,8 +4,7 @@ import logging
 import contextlib
 import requests
 from llama_index.core.settings import Settings
-from config import MODEL_PATH, DB_PATH, INDEX_PATH
-from auth.user_auth import init_user_table, signup, login
+from config import MODEL_PATH
 from gemini_engine import GeminiEngine
 from embed_and_index import build_index
 from dotenv import load_dotenv
@@ -171,7 +170,7 @@ def main():
     
     logger.info("Building RAG index...")
     with suppress_output():
-        index = build_index(db_path=DB_PATH, persist_path=INDEX_PATH)
+        index = build_index()
 
     print("\nYou can start chatting! (type 'exit' to quit)\n")
 

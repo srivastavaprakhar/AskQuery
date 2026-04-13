@@ -1,9 +1,14 @@
-import sqlite3
+import psycopg2
+from config import SUPABASE_DB_HOST, SUPABASE_DB_NAME, SUPABASE_DB_USER, SUPABASE_DB_PASSWORD, SUPABASE_DB_PORT
 
-# Connect to the database (or create it if it doesn't exist)
-conn = sqlite3.connect("trial1.db")
+conn = psycopg2.connect(
+    host=SUPABASE_DB_HOST,
+    database=SUPABASE_DB_NAME,
+    user=SUPABASE_DB_USER,
+    password=SUPABASE_DB_PASSWORD,
+    port=SUPABASE_DB_PORT
+)
 cursor = conn.cursor()
-
 # Create the events table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS events (

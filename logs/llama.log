@@ -1,50 +1,104 @@
 LLM is explicitly disabled. Using MockLLM.
-Building index from SQLite database...
-Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 43402.14it/s]
-Index saved to faiss_index
-Building index from SQLite database...
-Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15068.90it/s]
-Index saved to faiss_index
 LLM is explicitly disabled. Using MockLLM.
-Building index from SQLite database...
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7054.73it/s]
-Index saved to faiss_index
-Building index from SQLite database...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7497.90it/s]
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 31348.98it/s]
-Index saved to faiss_index
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16651.04it/s]
 LLM is explicitly disabled. Using MockLLM.
-Building index from SQLite database...
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9532.62it/s]
-Index saved to faiss_index
-Building index from SQLite database...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7297.95it/s]
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16334.30it/s]
-Index saved to faiss_index
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16868.42it/s]
 LLM is explicitly disabled. Using MockLLM.
-Building index from SQLite database...
-Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7817.64it/s]
-Index saved to faiss_index
-Building index from SQLite database...
-Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15608.83it/s]
-Index saved to faiss_index
-Exception ignored in: <module 'threading' from '/Users/prakharsrivastava/.pyenv/versions/3.10.13/lib/python3.10/threading.py'>
-Traceback (most recent call last):
-  File "/Users/prakharsrivastava/.pyenv/versions/3.10.13/lib/python3.10/threading.py", line 1567, in _shutdown
-    lock.acquire()
-KeyboardInterrupt: 
 LLM is explicitly disabled. Using MockLLM.
-Building index from SQLite database...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8887.85it/s]
-Index saved to faiss_index
-Building index from SQLite database...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7519.04it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
 Loading embedding model: intfloat/e5-small-v2 on CPU
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16892.66it/s]
-Index saved to faiss_index
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7268.14it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15233.92it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7602.04it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 18074.59it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5689.11it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16524.12it/s]
+LLM is explicitly disabled. Using MockLLM.
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8338.91it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 18491.03it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8990.67it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17974.94it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7326.39it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19393.26it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7844.46it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9244.18it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26133.14it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19391.91it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7477.55it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19561.88it/s]
+LLM is explicitly disabled. Using MockLLM.
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7448.19it/s]
+Fetching data from Supabase Postgres...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17717.40it/s]

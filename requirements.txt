@@ -13,3 +13,6 @@ llama-index-embeddings-openai
 openai
 python-dotenv
 google-generativeai
+psycopg2-binary
+llama-index-vector-stores-postgres
+python-jose

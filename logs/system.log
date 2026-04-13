@@ -1,119 +1,326 @@
-2026-04-01 14:09:57,332 - INFO - LLM is explicitly disabled.
-2026-04-01 14:09:57,344 - INFO - ShivaayEngine initialized.
-2026-04-01 14:09:58,103 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:09:58,236 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:09:58,683 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:09:58,815 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-01 14:09:59,283 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-01 14:10:00,124 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-01 14:10:00,577 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:10:00,723 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:10:02,314 - INFO - ShivaayEngine initialized.
-2026-04-01 14:10:02,730 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:10:02,903 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:10:03,261 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:10:03,432 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-01 14:10:03,797 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-01 14:10:04,159 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-01 14:10:04,555 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:10:04,555 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-04-01 14:10:04,682 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:10:38,639 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-01 14:10:39,307 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:10:39,309 - INFO - Retrying request to /chat/completions in 0.382562 seconds
-2026-04-01 14:10:39,797 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:10:39,798 - INFO - Retrying request to /chat/completions in 0.757886 seconds
-2026-04-01 14:10:40,620 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:10:40,622 - INFO - Question: who is the deputy hod of cse department → Answer: Error from Shivaay API: Error code: 500 - {'error': 'Failed to parse response'}
-2026-04-01 14:13:14,768 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-01 14:13:14,931 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:13:14,932 - INFO - Retrying request to /chat/completions in 0.499609 seconds
-2026-04-01 14:13:15,492 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:13:15,493 - INFO - Retrying request to /chat/completions in 0.994721 seconds
-2026-04-01 14:13:16,606 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:13:16,608 - INFO - Question: who is the hof cse dept? → Answer: Error from Shivaay API: Error code: 500 - {'error': 'Failed to parse response'}
-2026-04-01 14:13:43,607 - INFO - LLM is explicitly disabled.
-2026-04-01 14:13:43,614 - INFO - ShivaayEngine initialized.
-2026-04-01 14:13:44,085 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:44,085 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-04-01 14:13:44,119 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:13:44,389 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:44,423 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-01 14:13:44,707 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-01 14:13:44,972 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-01 14:13:45,312 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:45,351 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:13:46,931 - INFO - ShivaayEngine initialized.
-2026-04-01 14:13:47,204 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:47,244 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:13:47,517 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:47,554 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-01 14:13:47,828 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-01 14:13:48,124 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-01 14:13:48,438 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-01 14:13:48,477 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-01 14:14:03,544 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-01 14:14:03,821 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:14:03,822 - INFO - Retrying request to /chat/completions in 0.444051 seconds
-2026-04-01 14:14:04,323 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:14:04,324 - INFO - Retrying request to /chat/completions in 0.987797 seconds
-2026-04-01 14:14:05,373 - INFO - HTTP Request: POST https://api.futurixai.com/api/shivaay/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
-2026-04-01 14:14:05,375 - ERROR - Shivaay API error (status=500): Error code: 500 - {'error': 'Failed to parse response'} | body=<Response [500 Internal Server Error]>
+2026-04-12 15:56:20,326 - INFO - LLM is explicitly disabled.
+2026-04-12 15:57:22,428 - INFO - LLM is explicitly disabled.
+2026-04-12 15:57:22,429 - INFO - GeminiEngine initialized.
+2026-04-12 15:57:25,129 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:25,181 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:57:25,653 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:25,707 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 15:57:26,023 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 15:57:26,334 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 15:57:26,984 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:26,986 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 15:57:27,057 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:57:27,394 - INFO - GeminiEngine initialized.
+2026-04-12 15:57:29,749 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:29,819 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:57:30,771 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:30,837 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 15:57:31,604 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 15:57:31,923 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 15:57:32,283 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:57:32,407 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:12,905 - INFO - LLM is explicitly disabled.
+2026-04-12 15:58:12,906 - INFO - GeminiEngine initialized.
+2026-04-12 15:58:15,565 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:15,626 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:15,971 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:16,050 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:16,352 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 15:58:16,657 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 15:58:17,026 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:17,081 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:17,345 - INFO - GeminiEngine initialized.
+2026-04-12 15:58:19,390 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:19,465 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:19,773 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:19,832 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 15:58:20,183 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 15:58:20,491 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 15:58:20,838 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 15:58:20,896 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 15:59:09,952 - ERROR - Error while answering question.
 Traceback (most recent call last):
-  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/models/Shivaay/shivaay_engine.py", line 22, in generate
-    completion = self.client.chat.completions.create(
-  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 286, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
-    return self._post(
-  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1297, in post
-    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
-  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1070, in request
-    raise self._make_status_error_from_response(err.response) from None
-openai.InternalServerError: Error code: 500 - {'error': 'Failed to parse response'}
-2026-04-01 14:14:05,382 - INFO - Question: hi → Answer: Error from Shivaay API: Error code: 500 - <Response [500 Internal Server Error]>
-2026-04-09 12:47:19,356 - INFO - LLM is explicitly disabled.
-2026-04-09 12:47:19,357 - INFO - GeminiEngine initialized.
-2026-04-09 12:47:20,180 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:20,182 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-04-09 12:47:20,220 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:47:20,585 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:20,703 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-09 12:47:20,976 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-09 12:47:21,237 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-09 12:47:21,615 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:21,654 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:47:23,443 - INFO - GeminiEngine initialized.
-2026-04-09 12:47:23,755 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:23,850 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:47:24,107 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:24,145 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-09 12:47:24,428 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-09 12:47:24,699 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-09 12:47:25,049 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:47:25,087 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:48:03,867 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-09 12:50:55,968 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-09 12:51:23,460 - INFO - Question: who is the hod of cse dept? → Answer: Dr. Neha Chaudhary is the Head of Department (HoD) for the Department of Computer Science & Engineering. Her full designation is Professor & HoD.
-2026-04-09 12:53:22,033 - INFO - LLM is explicitly disabled.
-2026-04-09 12:53:22,034 - INFO - GeminiEngine initialized.
-2026-04-09 12:53:22,600 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:22,643 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:22,986 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:23,024 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:23,509 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-09 12:53:23,769 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-09 12:53:24,074 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:24,157 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:25,889 - INFO - GeminiEngine initialized.
-2026-04-09 12:53:26,242 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:26,329 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:26,654 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:26,655 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-04-09 12:53:26,694 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:27,178 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-04-09 12:53:27,444 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-04-09 12:53:27,739 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-04-09 12:53:27,778 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
-2026-04-09 12:53:31,403 - INFO - [🔍] Most relevant table inferred: faculty
-2026-04-09 12:54:17,744 - INFO - Question: who is ankur pandey sir? → Answer: Dr. Ankur Pandey is an Assistant Professor (Selection Grade) in the Department of Computer Science & Engineering.
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:10:27,934 - INFO - LLM is explicitly disabled.
+2026-04-12 19:10:32,405 - WARNING - Login failed for user '1'.
+2026-04-12 19:10:41,277 - INFO - LLM is explicitly disabled.
+2026-04-12 19:10:47,006 - INFO - User '1' signed up.
+2026-04-12 19:10:47,015 - ERROR - Could not connect to API server for /signup: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /signup (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-04-12 19:10:51,863 - INFO - LLM is explicitly disabled.
+2026-04-12 19:10:53,808 - INFO - User '1' logged in.
+2026-04-12 19:10:53,818 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-04-12 19:10:53,818 - INFO - Building RAG index...
+2026-04-12 19:10:56,648 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:10:56,708 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:10:57,024 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:10:57,026 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 19:10:57,094 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:10:57,440 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:10:57,750 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:10:58,124 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:10:58,197 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:11:06,235 - INFO - User query: who is the hod of cse dept?
+2026-04-12 19:11:06,447 - ERROR - Error during response generation
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 188, in main
+    response = answer_question(index, user_query, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:36:35,318 - INFO - LLM is explicitly disabled.
+2026-04-12 19:36:35,320 - INFO - GeminiEngine initialized.
+2026-04-12 19:36:38,667 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:38,734 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:36:39,041 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:39,043 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 19:36:39,108 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:36:39,747 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:36:40,113 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:36:40,468 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:40,635 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:36:40,912 - INFO - GeminiEngine initialized.
+2026-04-12 19:36:43,269 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:43,328 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:36:43,969 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:44,161 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:36:44,583 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:36:45,196 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:36:45,812 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:36:45,916 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:37:05,840 - ERROR - Error while answering question.
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:40:28,369 - INFO - LLM is explicitly disabled.
+2026-04-12 19:40:28,370 - INFO - GeminiEngine initialized.
+2026-04-12 19:40:31,047 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:31,050 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 19:40:31,100 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:31,665 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:31,723 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:32,061 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:40:32,406 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:40:32,788 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:32,906 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:33,178 - INFO - GeminiEngine initialized.
+2026-04-12 19:40:35,521 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:35,590 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:36,046 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:36,103 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:36,401 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:40:36,743 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:40:37,196 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:40:37,253 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:40:39,066 - ERROR - Error while answering question.
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:42:44,982 - INFO - LLM is explicitly disabled.
+2026-04-12 19:42:44,983 - INFO - GeminiEngine initialized.
+2026-04-12 19:45:02,400 - INFO - LLM is explicitly disabled.
+2026-04-12 19:45:02,401 - INFO - GeminiEngine initialized.
+2026-04-12 19:45:05,867 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:05,916 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:45:06,212 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:06,212 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 19:45:06,307 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:45:06,611 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:45:07,464 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:45:07,889 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:07,944 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:45:08,274 - INFO - GeminiEngine initialized.
+2026-04-12 19:45:11,178 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:11,231 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:45:11,536 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:11,608 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 19:45:11,914 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 19:45:12,641 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 19:45:13,143 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 19:45:13,338 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 19:48:38,586 - ERROR - Error while answering question.
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:48:42,551 - ERROR - Error while answering question.
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 19:50:06,914 - ERROR - Error while answering question.
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/api_wrapper.py", line 79, in api_ask
+    response = answer_question(index, req.question, model)
+  File "/Users/prakharsrivastava/Desktop/Projects/AskQuery/main.py", line 73, in answer_question
+    most_relevant_table = max(table_counts, key=table_counts.get)
+ValueError: max() arg is an empty sequence
+2026-04-12 20:01:07,972 - INFO - LLM is explicitly disabled.
+2026-04-12 20:01:49,123 - INFO - LLM is explicitly disabled.
+2026-04-12 20:01:49,128 - INFO - GeminiEngine initialized.
+2026-04-12 20:01:52,491 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:52,492 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 20:01:52,559 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:01:52,980 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:53,041 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 20:01:53,337 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 20:01:53,678 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 20:01:54,170 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:54,245 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:01:54,494 - INFO - GeminiEngine initialized.
+2026-04-12 20:01:57,348 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:57,418 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:01:57,738 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:57,805 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 20:01:58,298 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 20:01:58,776 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 20:01:59,393 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:01:59,471 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:03:54,488 - INFO - LLM is explicitly disabled.
+2026-04-12 20:03:54,492 - INFO - GeminiEngine initialized.
+2026-04-12 20:03:58,732 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:03:58,732 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-12 20:03:58,814 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:03:59,109 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:03:59,165 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 20:03:59,468 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 20:03:59,784 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 20:04:00,175 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:04:00,261 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:04:00,505 - INFO - GeminiEngine initialized.
+2026-04-12 20:04:02,554 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:04:02,614 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-12 20:04:03,195 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:04:03,293 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-12 20:04:03,808 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-12 20:04:05,803 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-12 20:04:06,181 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-12 20:04:06,240 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 13:54:50,203 - INFO - LLM is explicitly disabled.
+2026-04-13 13:54:50,208 - INFO - GeminiEngine initialized.
+2026-04-13 13:56:21,412 - INFO - LLM is explicitly disabled.
+2026-04-13 13:56:21,417 - INFO - GeminiEngine initialized.
+2026-04-13 13:58:44,092 - INFO - LLM is explicitly disabled.
+2026-04-13 13:58:44,097 - INFO - GeminiEngine initialized.
+2026-04-13 13:59:05,501 - INFO - LLM is explicitly disabled.
+2026-04-13 13:59:05,506 - INFO - GeminiEngine initialized.
+2026-04-13 14:02:14,657 - INFO - LLM is explicitly disabled.
+2026-04-13 14:02:14,661 - INFO - GeminiEngine initialized.
+2026-04-13 14:22:29,722 - INFO - LLM is explicitly disabled.
+2026-04-13 14:22:29,727 - INFO - GeminiEngine initialized.
+2026-04-13 14:22:32,760 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:32,840 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:22:33,118 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:33,118 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-13 14:22:33,242 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:22:33,579 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:22:33,852 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:22:34,264 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:34,289 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:22:35,578 - INFO - GeminiEngine initialized.
+2026-04-13 14:22:38,200 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:38,251 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:22:38,568 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:38,614 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:22:38,979 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:22:39,263 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:22:39,545 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:22:39,594 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:32,309 - INFO - LLM is explicitly disabled.
+2026-04-13 14:28:32,313 - INFO - GeminiEngine initialized.
+2026-04-13 14:28:35,129 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:35,152 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:35,438 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:35,438 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-13 14:28:35,459 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:35,719 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:28:35,997 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:28:36,288 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:36,320 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:37,856 - INFO - GeminiEngine initialized.
+2026-04-13 14:28:40,090 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:40,117 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:40,380 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:40,414 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:28:40,712 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:28:41,033 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:28:41,380 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:28:41,410 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:03,966 - INFO - LLM is explicitly disabled.
+2026-04-13 14:32:03,970 - INFO - GeminiEngine initialized.
+2026-04-13 14:32:06,998 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:07,038 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:07,304 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:07,473 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:07,802 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:32:08,072 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:32:08,398 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:08,508 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:09,544 - INFO - GeminiEngine initialized.
+2026-04-13 14:32:12,361 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:12,447 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:12,737 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:12,774 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:32:13,215 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:32:13,514 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:32:13,826 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:32:14,019 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:38:53,787 - INFO - LLM is explicitly disabled.
+2026-04-13 14:38:53,792 - INFO - GeminiEngine initialized.
+2026-04-13 14:38:56,209 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:38:56,233 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:38:56,501 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:38:56,502 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-13 14:38:56,528 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:38:56,791 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:38:57,221 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:38:57,747 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:38:57,782 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:38:58,999 - INFO - GeminiEngine initialized.
+2026-04-13 14:39:01,402 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:39:01,431 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:39:01,701 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:39:01,741 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:39:02,024 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:39:02,314 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:39:02,715 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:39:02,754 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:39:14,244 - INFO - [USER: prakharsr08@gmail.com] Question: who is neha janu?
+2026-04-13 14:39:14,278 - INFO - [🔍] Most relevant table inferred: faculty
+2026-04-13 14:39:21,375 - INFO - [USER: prakharsr08@gmail.com] Response: Dr. Neha Janu is an Associate Professor in department 53.
+2026-04-13 14:49:18,913 - INFO - LLM is explicitly disabled.
+2026-04-13 14:49:18,917 - INFO - GeminiEngine initialized.
+2026-04-13 14:50:13,241 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:50:13,292 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:50:13,622 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:50:13,701 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:50:14,006 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:50:14,377 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:50:14,898 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:50:15,008 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:50:16,542 - INFO - GeminiEngine initialized.
+2026-04-13 14:51:16,967 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:51:16,969 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-13 14:51:17,018 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:51:17,328 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:51:17,390 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 14:51:17,667 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 14:51:18,179 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 14:51:18,793 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 14:51:18,866 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-04-13 14:51:55,296 - INFO - [USER: prakharsr08@gmail.com] Question: who is neha jaanu maam?
+2026-04-13 14:51:55,336 - INFO - [🔍] Most relevant table inferred: faculty
+2026-04-13 14:52:10,405 - INFO - [USER: prakharsr08@gmail.com] Response: Dr. Neha Janu is an Associate Professor in the Department of Computer Science & Engineering.

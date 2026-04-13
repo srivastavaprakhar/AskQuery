@@ -1,36 +1,49 @@
-import sqlite3
+import psycopg2
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env
+load_dotenv()
+
+# Fetch variables
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Connect to the database
-conn = sqlite3.connect("trial1.db")
-cursor = conn.cursor()
-
-# Enable foreign keys
-cursor.execute("PRAGMA foreign_keys = ON;")
+connection = psycopg2.connect(DATABASE_URL)
+cursor = connection.cursor()
 
 # Create tables
 cursor.execute("""
-CREATE TABLE IF NOT EXISTS department (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT UNIQUE NOT NULL
+CREATE TABLE IF NOT EXISTS departments (
+    department_id SERIAL PRIMARY KEY,
+    department_name TEXT UNIQUE NOT NULL
 );
 """)
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS faculty (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     designation TEXT,
     department_id INTEGER,
-    FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
+    FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE
 );
 """)
 
 # Insert the department (only once)
 department_name = "Department of Computer Science & Engineering"
-cursor.execute("INSERT OR IGNORE INTO department (name) VALUES (?);", (department_name,))
+
+cursor.execute(
+    "INSERT INTO departments (department_name) VALUES (%s) ON CONFLICT DO NOTHING",
+    (department_name,)
+)
 
 # Get the department_id for foreign key use
-cursor.execute("SELECT id FROM department WHERE name = ?;", (department_name,))
+cursor.execute(
+    "SELECT department_id FROM departments WHERE department_name = %s",
+    (department_name,)
+)
+
 department_id = cursor.fetchone()[0]
 
 # Faculty data (same as before)
@@ -127,10 +140,10 @@ faculty_data = [
 # Insert all faculty with department_id
 cursor.executemany("""
 INSERT INTO faculty (name, designation, department_id)
-VALUES (?, ?, ?);
+VALUES (%s, %s, %s)
 """, [(name, designation, department_id) for name, designation in faculty_data])
 
-conn.commit()
-conn.close()
+connection.commit()
+connection.close()
 
 print(f"✅ Inserted {len(faculty_data)} faculty linked to Department ID {department_id}")

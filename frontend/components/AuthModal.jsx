@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { X } from "lucide-react"
-import { apiService } from "../lib/api"
+import { useAuth } from "./AuthProvider"
 
 export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
   const [isLogin, setIsLogin] = useState(true)
@@ -11,6 +11,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
   const [loading, setLoading] = useState(false)
+  const { signIn, signUp } = useAuth()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -19,17 +20,21 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
     setLoading(true)
 
     try {
+      // Treat `username` as the user's email for Supabase
+      const email = username
+
       if (isLogin) {
-        await apiService.login(username, password)
-        localStorage.setItem("username", username)
-        onAuthSuccess(username)
+        const { data, error } = await signIn(email, password)
+        if (error) throw error
+        localStorage.setItem("username", email)
+        onAuthSuccess(data?.user ?? null)
         onClose()
       } else {
-        await apiService.signup(username, password)
-        setSuccess("Signup successful! Please login with your credentials.")
+        const { data, error } = await signUp(email, password)
+        if (error) throw error
+        setSuccess("Signup successful! Check your email to confirm (if required).")
         setIsLogin(true)
         setPassword("")
-        // Keep username so user only needs to enter password
       }
     } catch (err) {
       // Provide more helpful error messages

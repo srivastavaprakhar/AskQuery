@@ -1,26 +1,32 @@
-import sqlite3
+import sys
+import os
 
-# Connect to SQLite database
-conn = sqlite3.connect("trial1.db")
+project_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(project_root)
+
+import psycopg2
+from config import SUPABASE_DB_HOST, SUPABASE_DB_NAME, SUPABASE_DB_USER, SUPABASE_DB_PASSWORD, SUPABASE_DB_PORT
+
+conn = psycopg2.connect(
+    "postgresql://postgres.nkkmvtkvozkboelcabkj:prakhar1008@aws-1-ap-northeast-2.pooler.supabase.com:6543/postgres?sslmode=require"
+)
 cursor = conn.cursor()
 
 
 # Create departments table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS departments (
-    department_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    department_id SERIAL PRIMARY KEY,
     department_name TEXT UNIQUE NOT NULL
 )
 ''')
 
-# Create faculty table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS faculty (
-    faculty_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    faculty_id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     designation TEXT NOT NULL,
-    department_id INTEGER,
-    FOREIGN KEY (department_id) REFERENCES departments(department_id)
+    department_id INTEGER REFERENCES departments(department_id) ON DELETE CASCADE
 )
 ''')
 
@@ -30,10 +36,15 @@ class Department:
         self.name = name
 
     def save(self, cursor):
-        cursor.execute("INSERT OR IGNORE INTO departments (department_name) VALUES (?)", (self.name,))
-
+        cursor.execute(
+            "INSERT INTO departments (department_name) VALUES (%s) ON CONFLICT DO NOTHING",
+            (self.name,)
+        )
     def get_id(self, cursor):
-        cursor.execute("SELECT department_id FROM departments WHERE department_name = ?", (self.name,))
+        cursor.execute(
+            "SELECT department_id FROM departments WHERE department_name = %s",
+            (self.name,)
+        )
         return cursor.fetchone()[0]
 
 class Faculty:
@@ -44,8 +55,8 @@ class Faculty:
 
     def save(self, cursor):
         cursor.execute('''
-            INSERT INTO faculty (name, designation, department_id)
-            VALUES (?, ?, ?)
+        INSERT INTO faculty (name, designation, department_id)
+        VALUES (%s, %s, %s)
         ''', (self.name, self.designation, self.department_id))
         
 departments = [
@@ -55,8 +66,10 @@ departments = [
     ("Department of Arts",)
 ]
 
-cursor.executemany("INSERT OR IGNORE INTO departments (department_name) VALUES (?)", departments)
-
+cursor.executemany(
+    "INSERT INTO departments (department_name) VALUES (%s) ON CONFLICT DO NOTHING",
+    departments
+)
 # Data from the image
 faculty_data = [
     ("Dr. Sunny Dawar", "Associate Professor & HoD (I/C)", "Department of Economics"),

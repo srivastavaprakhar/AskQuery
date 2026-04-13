@@ -7,11 +7,12 @@ import ChatPane from "./ChatPane"
 import ThemeToggle from "./ThemeToggle"
 import AuthModal from "./AuthModal"
 import { apiService } from "../lib/api"
+import { useAuth } from "./AuthProvider"
 
 export default function AIAssistantUI() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [showAuthModal, setShowAuthModal] = useState(false)
-  const [username, setUsername] = useState("")
+  const { user, signOut } = useAuth()
+  const isAuthenticated = Boolean(user)
   const [theme, setTheme] = useState(() => {
     const saved = typeof window !== "undefined" && localStorage.getItem("theme")
     if (saved) return saved
@@ -67,20 +68,12 @@ export default function AIAssistantUI() {
     checkBackend()
   }, [])
 
-  // Check authentication on mount
+  // Open auth modal if no user
   useEffect(() => {
-    const savedUsername = localStorage.getItem("username")
-    if (savedUsername) {
-      setUsername(savedUsername)
-      setIsAuthenticated(true)
-    } else {
-      setShowAuthModal(true)
-    }
-  }, [])
+    if (!user) setShowAuthModal(true)
+  }, [user])
 
-  const handleAuthSuccess = (user) => {
-    setUsername(user)
-    setIsAuthenticated(true)
+  const handleAuthSuccess = (_user) => {
     setShowAuthModal(false)
   }
 
@@ -380,11 +373,12 @@ export default function AIAssistantUI() {
           setQuery={setQuery}
           searchRef={searchRef}
           createNewChat={createNewChat}
-          username={username}
-          onLogout={() => {
-            localStorage.removeItem("username")
+          username={user?.email ?? user?.id ?? ""}
+          onLogout={async () => {
+            try {
+              await signOut()
+            } catch {}
             localStorage.removeItem("conversations")
-            setIsAuthenticated(false)
             setConversations([])
             setSelectedId(null)
             setShowAuthModal(true)

@@ -1,19 +1,54 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
-from main import suppress_output  # ✅ reuse the same context manager
+from main import suppress_output
 from main import answer_question, safe_llm_init
 from embed_and_index import build_index
-from auth.user_auth import signup, login, init_user_table
-from config import DB_PATH, INDEX_PATH
 import logging
 import os
-import logging
 from fastapi.middleware.cors import CORSMiddleware
 
-# Silence noisy loggers
+# ✅ NEW IMPORTS
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from jose import jwt
+import requests
+
+# ✅ IMPORT CONFIG
+from config import SUPABASE_URL
+
+# ==============================
+# 🔐 SUPABASE AUTH CONFIG
+# ==============================
+SUPABASE_JWKS_URL = f"{SUPABASE_URL}/auth/v1/keys"
+security = HTTPBearer()
+
+def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
+
+    try:
+        # 🔥 Use Supabase Auth API instead of manual JWT decode
+        res = requests.get(
+            f"{SUPABASE_URL}/auth/v1/user",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ra212dGt2b3prYm9lbGNhYmtqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5NzQzMjMsImV4cCI6MjA5MTU1MDMyM30.wzCHWj304Pco0mCLQkf5tS4TBNT5KTd3uiXjh42kEYk"  # 🔥 IMPORTANT
+            }
+        )
+
+        if res.status_code != 200:
+            raise Exception("Invalid token")
+
+        user = res.json()
+        return user
+
+    except Exception as e:
+        print("AUTH ERROR:", e)
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    
+# ==============================
+# 🔧 LOGGING SETUP
+# ==============================
 logging.getLogger("watchdog").setLevel(logging.WARNING)
 
-# Setup logging
 os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     filename="logs/system.log",
@@ -22,69 +57,68 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 
-# ==== FastAPI App ====
+# ==============================
+# 🚀 FASTAPI APP
+# ==============================
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace * with your domain
+    allow_origins=["*"],  # ⚠️ restrict in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# ==== Init DB ====
-os.makedirs("database", exist_ok=True)
-init_user_table()
-
-# ==== Load once ====
+# ==============================
+# 🧠 LOAD MODEL + INDEX
+# ==============================
 with suppress_output():
-   model = safe_llm_init()
-   index = build_index(db_path=DB_PATH, persist_path=INDEX_PATH)
+    model = safe_llm_init()
+    index = build_index()
 
-# ==== Request Models ====
-class AuthRequest(BaseModel):
-    username: str
-    password: str
-
+# ==============================
+# 📦 REQUEST MODEL
+# ==============================
 class QuestionRequest(BaseModel):
     question: str
 
-# ==== API Routes ====
 
+# ==============================
+# 🧪 HEALTH CHECK
+# ==============================
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
 
-@app.post("/signup")
-def api_signup(data: AuthRequest):
-    if signup(data.username, data.password):
-        logger.info(f"User '{data.username}' signed up via API")
-        return {"status": "Signup successful"}
-    else:
-        logger.warning(f"Signup failed: Username '{data.username}' already exists.")
-        raise HTTPException(status_code=400, detail="Username already exists.")
 
-@app.post("/login")
-def api_login(data: AuthRequest):
-    if login(data.username, data.password):
-        logger.info(f"User '{data.username}' logged in via API")
-        return {"status": "Login successful"}
-    else:
-        logger.warning(f"Login failed for user '{data.username}'")
-        raise HTTPException(status_code=401, detail="Invalid credentials.")
-
+# ==============================
+# 🔐 SECURED ENDPOINT
+# ==============================
 @app.post("/ask")
-def api_ask(req: QuestionRequest):
+def api_ask(
+    req: QuestionRequest,
+    user=Depends(verify_token)
+):
     try:
+        user_email = user.get("email", "unknown")
+
+        logger.info(f"[USER: {user_email}] Question: {req.question}")
+
         response = answer_question(index, req.question, model)
-        logger.info(f"Question: {req.question} → Answer: {response}")
+
+        logger.info(f"[USER: {user_email}] Response: {response}")
+
         return {"answer": response}
-    except Exception as e:
+
+    except Exception:
         logger.exception("Error while answering question.")
         raise HTTPException(status_code=500, detail="Error generating response")
-    
-# ==== Dev server entry ====
+
+
+# ==============================
+# ▶️ RUN SERVER
+# ==============================
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api_wrapper:app", host="127.0.0.1", port=8000, reload=False)

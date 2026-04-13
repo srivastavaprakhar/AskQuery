@@ -2,15 +2,14 @@ from transformers import AutoTokenizer, AutoModel
 import torch
 import numpy as np
 from llama_index.core.node_parser import SentenceSplitter
-from llama_index.vector_stores.faiss import FaissVectorStore
 from llama_index.core import VectorStoreIndex, load_index_from_storage
 from llama_index.core.storage.storage_context import StorageContext
 from llama_index.core.settings import Settings
 from llama_index.embeddings.openai.base import BaseEmbedding
-from config import DB_PATH, INDEX_PATH
-from sqlite_loader import get_sqlite_db
 from typing import Optional
-
+from llama_index.vector_stores.postgres import PGVectorStore
+from postgres_loader import get_postgres_data
+from config import SUPABASE_DB_HOST, SUPABASE_DB_NAME, SUPABASE_DB_USER, SUPABASE_DB_PASSWORD, SUPABASE_DB_PORT
 
 class E5SmallV2Embedding(BaseEmbedding):
     model_name: str = "intfloat/e5-small-v2"
@@ -48,24 +47,26 @@ class E5SmallV2Embedding(BaseEmbedding):
         return self._get_embedding(query)
 
 
-def build_index(db_path=DB_PATH, persist_path=INDEX_PATH):
-    print("Building index from SQLite database...")
-    documents = get_sqlite_db(db_path)
-
-    # Tune for fewer chunks = faster retrieval
-    splitter = SentenceSplitter(chunk_size=1024, chunk_overlap=100)
-    nodes = splitter.get_nodes_from_documents(documents)
+def build_index():
+    print("Fetching data from Supabase Postgres...")
+    documents = get_postgres_data()
 
     embed_model = E5SmallV2Embedding()
     Settings.embed_model = embed_model
 
-    index = VectorStoreIndex(nodes)
-    index.storage_context.persist(persist_dir=persist_path)
-    print(f"Index saved to {persist_path}")
+    vector_store = PGVectorStore.from_params(
+        database=SUPABASE_DB_NAME,
+        host=SUPABASE_DB_HOST,
+        password=SUPABASE_DB_PASSWORD,
+        user=SUPABASE_DB_USER,
+        port=SUPABASE_DB_PORT,
+        table_name="documents",
+        embed_dim=384
+    )
+
+    index = VectorStoreIndex.from_documents(
+        documents,
+        vector_store=vector_store
+    )
 
     return index
-
-def load_index(persist_path=INDEX_PATH):
-    embed_model = E5SmallV2Embedding()
-    Settings.embed_model = embed_model
-    return load_index_from_storage(StorageContext.from_defaults(persist_dir=persist_path))
