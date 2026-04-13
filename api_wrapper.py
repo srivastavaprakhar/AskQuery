@@ -74,9 +74,16 @@ app.add_middleware(
 # ==============================
 # 🧠 LOAD MODEL + INDEX
 # ==============================
-with suppress_output():
+model = None
+index = None
+
+@app.on_event("startup")
+def load_resources():
+    global model, index
+    print("🚀 Loading model + index...")
     model = safe_llm_init()
     index = build_index()
+    print("✅ Ready")
 
 # ==============================
 # 📦 REQUEST MODEL
