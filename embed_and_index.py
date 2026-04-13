@@ -68,5 +68,10 @@ def build_index():
         documents,
         vector_store=vector_store
     )
-
+    
     return index
+
+if __name__ == "__main__":
+    print("🚀 Running indexing manually...")
+    build_index()
+    print("✅ Index built successfully")

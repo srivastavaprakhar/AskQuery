@@ -6,7 +6,6 @@ import requests
 from llama_index.core.settings import Settings
 from config import MODEL_PATH
 from gemini_engine import GeminiEngine
-from embed_and_index import build_index
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -162,10 +161,6 @@ def main():
     print("⏳ Loading model...")
     model = GeminiEngine()
     
-    logger.info("Building RAG index...")
-    with suppress_output():
-        index = build_index()
-
     print("\nYou can start chatting! (type 'exit' to quit)\n")
 
     while True:
