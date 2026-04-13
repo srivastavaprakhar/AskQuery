@@ -76,28 +76,35 @@ app.add_middleware(
 # ==============================
 model = None
 index = None
+is_loading = True
+
+import threading
 
 @app.on_event("startup")
 def load_resources():
-    global model, index
-    print("🚀 Loading model + index...")
-    model = safe_llm_init()
-    index = build_index()
-    print("✅ Ready")
+    def init():
+        global model, index, is_loading
+        print("🚀 Loading model + index...")
+        model = safe_llm_init()
+        index = build_index()
+        is_loading = False
+        print("✅ Ready")
 
+    threading.Thread(target=init).start()
 # ==============================
 # 📦 REQUEST MODEL
 # ==============================
 class QuestionRequest(BaseModel):
     question: str
 
-
 # ==============================
 # 🧪 HEALTH CHECK
 # ==============================
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {
+        "status": "loading" if is_loading else "ready"
+    }
 
 
 # ==============================
@@ -108,6 +115,14 @@ def api_ask(
     req: QuestionRequest,
     user=Depends(verify_token)
 ):
+    global model, index, is_loading
+
+    # 🚨 Prevent crashes during startup
+    if is_loading or model is None or index is None:
+        return {
+            "answer": "System is initializing. Please try again in a few seconds."
+        }
+
     try:
         user_email = user.get("email", "unknown")
 
