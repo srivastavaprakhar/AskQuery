@@ -11,9 +11,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from jose import jwt
 import requests
-
 # ✅ IMPORT CONFIG
 from config import SUPABASE_URL
+
+SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY")
 
 # ==============================
 # 🔐 SUPABASE AUTH CONFIG
@@ -30,7 +31,7 @@ def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
             f"{SUPABASE_URL}/auth/v1/user",
             headers={
                 "Authorization": f"Bearer {token}",
-                "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ra212dGt2b3prYm9lbGNhYmtqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5NzQzMjMsImV4cCI6MjA5MTU1MDMyM30.wzCHWj304Pco0mCLQkf5tS4TBNT5KTd3uiXjh42kEYk"  # 🔥 IMPORTANT
+                "apikey": SUPABASE_ANON_KEY
             }
         )
 
@@ -64,7 +65,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ⚠️ restrict in production
+    allow_origins=[
+    "http://localhost:3000",        # dev
+    "https://askquery.vercel.app/"   # prod
+    ], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
