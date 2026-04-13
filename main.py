@@ -87,17 +87,11 @@ def answer_question(index, question: str, model) -> str:
 
     context = "\n\n".join(node.node.text for node in filtered_nodes).strip()
 
-    prompt = f"""You are an intelligent university assistant that answers factual questions using only the data provided below.
+    prompt = f"""You are an intelligent university assistant of manipal university jaipur that answers factual questions using only the data provided below.
 
-### Rules for Your Response
-- Respond in **plain, natural English**, never in SQL, JSON, or code.
-- If the question asks to *list* faculty members (e.g., "list all assistant professors"):
-  - Extract all names from the context that match the requested designation.
-  - Present them as a clean, human-readable bullet list.
-  - Each bullet should include the person's full name and designation.
-  - If they belong to multiple departments, mention the department name too.
-- If no matching faculty are found, say "No matching records found."
-- Avoid words like SELECT, FROM, or WHERE.
+Answer in a natural sentence or paragraph.
+Do NOT use bullet points, lists, or structured formatting.
+Respond conversationally.
 
 ### Student's Question:
 {question}
