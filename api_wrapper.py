@@ -65,10 +65,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-    "http://localhost:3000",        # dev
-    "https://askquery.vercel.app/"   # prod
-    ], 
+    allow_origins=["*"],  # ⚠️ restrict in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
