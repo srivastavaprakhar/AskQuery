@@ -1,17 +1,16 @@
-import sys
+import psycopg2
+from dotenv import load_dotenv
 import os
 
-project_root = os.path.dirname(os.path.dirname(__file__))
-sys.path.append(project_root)
+# Load environment variables from .env
+load_dotenv()
 
-import psycopg2
-from config import SUPABASE_DB_HOST, SUPABASE_DB_NAME, SUPABASE_DB_USER, SUPABASE_DB_PASSWORD, SUPABASE_DB_PORT
+# Fetch variables
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-conn = psycopg2.connect(
-    "postgresql://postgres.nkkmvtkvozkboelcabkj:prakhar1008@aws-1-ap-northeast-2.pooler.supabase.com:6543/postgres?sslmode=require"
-)
-cursor = conn.cursor()
-
+# Connect to the database
+connection = psycopg2.connect(DATABASE_URL)
+cursor = connection.cursor()
 
 # Create departments table
 cursor.execute('''
@@ -131,7 +130,7 @@ for name, designation, dept in faculty_data:
     faculty.save(cursor)
 
 # Commit and close
-conn.commit()
-conn.close()
+connection.commit()
+connection.close()
 
 print("Faculty and departments inserted successfully.")
